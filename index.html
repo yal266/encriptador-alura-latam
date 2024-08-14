@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/remixicon@3.2.0/fonts/remixicon.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/images/logo.svg" alt="Logo de Alura">
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="encryptor-form">
+                <div class="input-area">
+                    <textarea id="input-text" placeholder="Ingrese el texto aquí" required></textarea>
+                    <div class="input-info">
+                        <div class="info">
+                            <img src="assets/images/exclamacion.svg" alt="Advertencia">
+                            <p id="warning">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button id="encrypt">Encriptar</button>
+                            <button id="decrypt">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="output-area">
+                <div class="output-content">
+                    <div class="default-view" id="default">
+                        <img src="assets/images/muneco.svg" alt="Imagen animada">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="result-view invisible" id="result">
+                        <textarea id="output-text" readonly></textarea>
+                        <button id="copy">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Todos los derechos reservados por Yasmin Domínguez Azaña</p>
+        <img src="assets/images/logo-aluralatam-oracle.svg" alt="Logo Alura Latam">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yasmin-dom%C3%ADnguez-aza%C3%B1a-06295524b/" target="_blank" rel="noopener noreferrer">
+                <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="https://github.com/yal266" target="_blank" rel="noopener noreferrer">
+                <i class="ri-github-line"></i>
+            </a>
+            <a href="https://www.instagram.com/george28herrada/" target="_blank" rel="noopener noreferrer">
+                <i class="ri-instagram-line"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
